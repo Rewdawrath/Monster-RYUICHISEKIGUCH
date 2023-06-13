@@ -7,7 +7,7 @@ using namespace std;
 class monster{
 private:
 	string name;
-	int hp,potion;
+	int hp;
   bool isDead = false;
 public:
   
@@ -34,7 +34,7 @@ monster::monster(string n = getRandomName() ,int h=20){
 
 void monster::print(){
   cout<<"Monster "<<name;
-  cout<<" hp:"<<hp<<" potion:   "<<potion<<endl;
+  cout<<" hp:"<<hp<<endl;
   
 }
 void monster::attack(monster & b){// x.Attack(y)
