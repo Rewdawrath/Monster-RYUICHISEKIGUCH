@@ -60,10 +60,7 @@ void monster::operator+=(int n)
 	this->hp += n;
 }
 
-bool monster::operator==(monster monster)
-{
-	return this->hp == monster.hp && this->name == monster.name && this->potion == monster.potion;
-}
+
 
 bool monster::checkDeath()
 {
@@ -81,7 +78,6 @@ void monster::getKilled()
 {
 	this->hp = 0;
 	this->isDead = true;
-	this->potion = 0;
 	cout << this->name << " got killed." << endl;
 }
 #endif
